@@ -79,7 +79,7 @@ li {
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
-  background-image: url(./media/wallpaper-2.jpg);
+  background-image: url(../media/wallpaper-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -372,24 +372,96 @@ header {
     margin-top: 60px;
     max-width: 100%;
     padding: 40px;
-    border: thin solid rgb(254, 135, 0);
+    background-image: url(../media/wallpaper-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid rgba(255, 255, 255, 0.11);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
 
   .card-disenos img {
     height: 300px;
     object-fit: contain;
-    border: thin solid wheat;
   }
 
   h3 {
     color: rgb(254, 135, 0);
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 80px;
     font-weight: 600;
   }
+}
+
+.showmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+
+  a {
+    text-align: center;
+    width: 290px;
+    color: #393939;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgb(252, 192, 0), rgb(254, 135, 0));
+    font-size: 20px;
+    font-weight: 600;
+    padding: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.quiensoy-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  margin-top: 120px;
+
+  h2 {
+    font-size: 70px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      opacity: 1;
+      text-transform: uppercase;
+      padding-bottom: 50px;
+      color: rgb(255, 255, 255);
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+    width: 450px;
+  }
+}
+
+.quiensoy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+footer {
+  margin-top: 120px;
+  text-align: center;
+  background-color: #0000004b;
+  color: rgb(252, 192, 0);
 }
